@@ -1,476 +1,438 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6d6d6d; -webkit-text-stroke: #6d6d6d}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0000ff; -webkit-text-stroke: #0000ff}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6b0001; -webkit-text-stroke: #6b0001}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #fb0007; -webkit-text-stroke: #fb0007}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4d5055; -webkit-text-stroke: #4d5055}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000; min-height: 16.0px}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #18702b; -webkit-text-stroke: #18702b}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #093c94; -webkit-text-stroke: #093c94}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #137646; -webkit-text-stroke: #137646}
-    span.s1 {font-kerning: none; background-color: #ecf1f7}
-    span.s2 {font-kerning: none; color: #fb0007; background-color: #ecf1f7; -webkit-text-stroke: 0px #fb0007}
-    span.s3 {font-kerning: none; color: #2a2a2a; background-color: #ecf1f7; -webkit-text-stroke: 0px #2a2a2a}
-    span.s4 {font-kerning: none; color: #6b0001; background-color: #ecf1f7; -webkit-text-stroke: 0px #6b0001}
-    span.s5 {font-kerning: none; color: #000000; background-color: #ecf1f7; -webkit-text-stroke: 0px #000000}
-    span.s6 {font-kerning: none; color: #0000ff; background-color: #ecf1f7; -webkit-text-stroke: 0px #0000ff}
-    span.s7 {font-kerning: none; color: #093c94; background-color: #ecf1f7; -webkit-text-stroke: 0px #093c94}
-    span.s8 {font-kerning: none; color: #137646; background-color: #ecf1f7; -webkit-text-stroke: 0px #137646}
-    span.s9 {font-kerning: none}
-    span.s10 {font-kerning: none; color: #18702b; background-color: #ecf1f7; -webkit-text-stroke: 0px #18702b}
-    span.s11 {font-kerning: none; color: #6f0ec3; background-color: #ecf1f7; -webkit-text-stroke: 0px #6f0ec3}
-    span.s12 {font-kerning: none; color: #4d5055; background-color: #ecf1f7; -webkit-text-stroke: 0px #4d5055}
-    span.s13 {font-kerning: none; color: #0e6e6d; background-color: #ecf1f7; -webkit-text-stroke: 0px #0e6e6d}
-    span.s14 {font-kerning: none; color: #a4450b; background-color: #ecf1f7; -webkit-text-stroke: 0px #a4450b}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyun Bin & Son Ye-jin Wedding Invitation</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --morandi-gold: #d4a373;
+            --morandi-green: #8da399;
+            --morandi-bg: #fdfaf7;
+            --soft-white: rgba(255, 255, 255, 0.9);
+        }
+
+        body {
+            font-family: 'Noto Serif TC', serif;
+            background-color: var(--morandi-bg);
+            color: #4a4a4a;
+            scroll-behavior: smooth;
+        }
+
+        .font-eng {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* Frosted Glass Navbar */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 163, 115, 0.2);
+            z-index: 1000;
+        }
+
+        /* Hero Section */
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://i.postimg.cc/kgc56jph/134950801-802862817239601-5119699613019994186-n.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        /* Countdown Cards (極致陰影與圓角) */
+        .timer-card {
+            background: var(--soft-white);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem 1rem;
+            min-width: 80px;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease;
+        }
+        
+        .timer-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .timer-divider {
+            width: 1px;
+            height: 40px;
+            background: rgba(212, 163, 115, 0.3);
+            margin: 0 15px;
+        }
+
+        /* V-Card Style */
+        .v-card {
+            background: white;
+            border-left: 4px solid var(--morandi-gold);
+            padding: 2.5rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+            margin-bottom: 2rem;
+        }
+
+        /* Accordion (Transportation Fix) */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .accordion-btn.active + .accordion-content {
+            max-height: 500px;
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Dress Code Circles */
+        .color-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin: 0 auto 1rem;
+            border: 2px solid white;
+        }
+
+        /* Form Styling */
+        .form-input {
+            border: none;
+            border-bottom: 1px solid #d1d1d1;
+            padding: 0.75rem 0;
+            width: 100%;
+            background: transparent;
+            transition: border-color 0.3s;
+            border-radius: 0;
+            appearance: none;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--morandi-gold);
+        }
+
+        .submit-btn {
+            background-color: var(--morandi-gold);
+            color: white;
+            padding: 1rem 3rem;
+            letter-spacing: 2px;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #bc8a5f;
+            box-shadow: 0 5px 15px rgba(212, 163, 115, 0.4);
+        }
+
+        .shimmer {
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            pointer-events: none;
+            border-radius: 12px;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+    </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
-<p class="p2"><span class="s3">&lt;</span><span class="s4">html</span><span class="s5"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s1">"zh-Hant"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s6">"UTF-8"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s5"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">title</span><span class="s3">&gt;</span><span class="s1">Hyun Bin &amp; Son Ye-jin Wedding Invitation</span><span class="s3">&lt;/</span><span class="s4">title</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Fonts --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">link</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Noto+Serif+TC:wght@300;500;700&amp;display=swap"</span><span class="s5"> </span><span class="s2">rel</span><span class="s3">=</span><span class="s1">"stylesheet"</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Tailwind CSS --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">:root</span><span class="s1"> {</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">--morandi-gold:</span><span class="s5"> </span><span class="s7">#d4a373</span><span class="s5">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">--morandi-green:</span><span class="s5"> </span><span class="s7">#8da399</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">--morandi-bg:</span><span class="s1"> </span><span class="s7">#fdfaf7</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">--soft-white:</span><span class="s1"> </span><span class="s7">rgba(</span><span class="s8">255</span><span class="s1">, </span><span class="s8">255</span><span class="s1">, </span><span class="s8">255</span><span class="s1">, </span><span class="s8">0.9</span><span class="s7">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">body</span><span class="s1"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-family:</span><span class="s1"> </span><span class="s10">'Noto Serif TC'</span><span class="s1">, </span><span class="s7">serif</span><span class="s1">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s5"> </span><span class="s7">var(--morandi-bg)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">#4a4a4a</span><span class="s1">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">scroll-behavior:</span><span class="s5"> </span><span class="s7">smooth</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">.font-eng</span><span class="s1"> {</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">font-family:</span><span class="s5"> </span><span class="s1">'Cormorant Garamond'</span><span class="s5">, </span><span class="s7">serif</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* Frosted Glass Navbar */</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">.glass-nav</span><span class="s1"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> </span><span class="s7">rgba(</span><span class="s8">255</span><span class="s1">, </span><span class="s8">255</span><span class="s1">, </span><span class="s8">255</span><span class="s1">, </span><span class="s8">0.65</span><span class="s7">)</span><span class="s1">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">backdrop-filter:</span><span class="s5"> </span><span class="s7">blur(</span><span class="s8">12px</span><span class="s7">)</span><span class="s5">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">-webkit-backdrop-filter:</span><span class="s5"> </span><span class="s7">blur(</span><span class="s8">12px</span><span class="s7">)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-bottom:</span><span class="s1"> </span><span class="s8">1px</span><span class="s1"> </span><span class="s7">solid</span><span class="s1"> </span><span class="s7">rgba(</span><span class="s8">212</span><span class="s1">, </span><span class="s8">163</span><span class="s1">, </span><span class="s8">115</span><span class="s1">, </span><span class="s8">0.2</span><span class="s7">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">z-index:</span><span class="s1"> </span><span class="s8">1000</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* Hero Section */</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">.hero-bg</span><span class="s1"> {</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s5"> </span><span class="s7">linear-gradient(rgba(</span><span class="s8">0</span><span class="s5">,</span><span class="s8">0</span><span class="s5">,</span><span class="s8">0</span><span class="s5">,</span><span class="s8">0.2</span><span class="s7">)</span><span class="s5">, </span><span class="s7">rgba(</span><span class="s8">0</span><span class="s5">,</span><span class="s8">0</span><span class="s5">,</span><span class="s8">0</span><span class="s5">,</span><span class="s8">0.2</span><span class="s7">))</span><span class="s5">, </span><span class="s7">url</span><span class="s5">(</span><span class="s1">'https://i.postimg.cc/kgc56jph/134950801-802862817239601-5119699613019994186-n.jpg'</span><span class="s5">);</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">background-size:</span><span class="s5"> </span><span class="s7">cover</span><span class="s5">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">background-position:</span><span class="s5"> </span><span class="s7">center</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">height:</span><span class="s1"> </span><span class="s8">100vh</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* Countdown Cards (極致陰影與圓角) */</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.timer-card</span><span class="s5"> {</span></p>
-<p class="p9"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s5"> </span><span class="s1">var(--soft-white)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">12px</span><span class="s1">;</span></p>
-<p class="p10"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s5"> </span><span class="s1">0</span><span class="s5"> </span><span class="s1">10px</span><span class="s5"> </span><span class="s1">25px</span><span class="s5"> </span><span class="s1">-5px</span><span class="s5"> </span><span class="s7">rgba(</span><span class="s1">0</span><span class="s5">, </span><span class="s1">0</span><span class="s5">, </span><span class="s1">0</span><span class="s5">, </span><span class="s1">0.05</span><span class="s7">)</span><span class="s5">, </span><span class="s1">0</span><span class="s5"> </span><span class="s1">8px</span><span class="s5"> </span><span class="s1">10px</span><span class="s5"> </span><span class="s1">-6px</span><span class="s5"> </span><span class="s7">rgba(</span><span class="s1">0</span><span class="s5">, </span><span class="s1">0</span><span class="s5">, </span><span class="s1">0</span><span class="s5">, </span><span class="s1">0.05</span><span class="s7">)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">1.5rem</span><span class="s1"> </span><span class="s8">1rem</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">min-width:</span><span class="s1"> </span><span class="s8">80px</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">position:</span><span class="s1"> </span><span class="s7">relative</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s8">1px</span><span class="s1"> </span><span class="s7">solid</span><span class="s1"> </span><span class="s7">rgba(</span><span class="s8">255</span><span class="s1">, </span><span class="s8">255</span><span class="s1">, </span><span class="s8">255</span><span class="s1">, </span><span class="s8">0.5</span><span class="s7">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s1"> </span><span class="s7">transform</span><span class="s1"> </span><span class="s8">0.3s</span><span class="s1"> </span><span class="s7">ease</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.timer-card:hover</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transform:</span><span class="s1"> </span><span class="s7">translateY(</span><span class="s8">-5px</span><span class="s7">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.timer-divider</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s8">1px</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">height:</span><span class="s1"> </span><span class="s8">40px</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> </span><span class="s7">rgba(</span><span class="s8">212</span><span class="s1">, </span><span class="s8">163</span><span class="s1">, </span><span class="s8">115</span><span class="s1">, </span><span class="s8">0.3</span><span class="s7">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin:</span><span class="s1"> </span><span class="s8">0</span><span class="s1"> </span><span class="s8">15px</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* V-Card Style */</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">.v-card</span><span class="s1"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> </span><span class="s7">white</span><span class="s1">;</span></p>
-<p class="p9"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">border-left:</span><span class="s5"> </span><span class="s8">4px</span><span class="s5"> </span><span class="s1">solid</span><span class="s5"> </span><span class="s1">var(--morandi-gold)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">2.5rem</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s8">0</span><span class="s1"> </span><span class="s8">20px</span><span class="s1"> </span><span class="s8">40px</span><span class="s1"> </span><span class="s7">rgba(</span><span class="s8">0</span><span class="s1">,</span><span class="s8">0</span><span class="s1">,</span><span class="s8">0</span><span class="s1">,</span><span class="s8">0.03</span><span class="s7">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin-bottom:</span><span class="s1"> </span><span class="s8">2rem</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* Accordion (Transportation Fix) */</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.accordion-content</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">max-height:</span><span class="s1"> </span><span class="s8">0</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">overflow:</span><span class="s1"> </span><span class="s7">hidden</span><span class="s1">;</span></p>
-<p class="p9"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s5"> </span><span class="s1">max-height</span><span class="s5"> </span><span class="s8">0.5s</span><span class="s5"> </span><span class="s1">cubic-bezier(</span><span class="s8">0.4</span><span class="s5">, </span><span class="s8">0</span><span class="s5">, </span><span class="s8">0.2</span><span class="s5">, </span><span class="s8">1</span><span class="s1">)</span><span class="s5">, </span><span class="s1">opacity</span><span class="s5"> </span><span class="s8">0.3s</span><span class="s5"> </span><span class="s1">ease</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">opacity:</span><span class="s1"> </span><span class="s8">0</span><span class="s1">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">pointer-events:</span><span class="s5"> </span><span class="s7">none</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.accordion-btn.active</span><span class="s5"> + </span><span class="s1">.accordion-content</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">max-height:</span><span class="s1"> </span><span class="s8">500px</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">opacity:</span><span class="s1"> </span><span class="s8">1</span><span class="s1">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">pointer-events:</span><span class="s5"> </span><span class="s7">auto</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* Dress Code Circles */</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.color-circle</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s8">60px</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">height:</span><span class="s1"> </span><span class="s8">60px</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">50%</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s8">0</span><span class="s1"> </span><span class="s8">4px</span><span class="s1"> </span><span class="s8">10px</span><span class="s1"> </span><span class="s7">rgba(</span><span class="s8">0</span><span class="s1">,</span><span class="s8">0</span><span class="s1">,</span><span class="s8">0</span><span class="s1">,</span><span class="s8">0.1</span><span class="s7">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin:</span><span class="s1"> </span><span class="s8">0</span><span class="s1"> </span><span class="s7">auto</span><span class="s1"> </span><span class="s8">1rem</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s8">2px</span><span class="s1"> </span><span class="s7">solid</span><span class="s1"> </span><span class="s7">white</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* Form Styling */</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.form-input</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s7">none</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-bottom:</span><span class="s1"> </span><span class="s8">1px</span><span class="s1"> </span><span class="s7">solid</span><span class="s1"> </span><span class="s7">#d1d1d1</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">0.75rem</span><span class="s1"> </span><span class="s8">0</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s8">100%</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> </span><span class="s7">transparent</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s1"> </span><span class="s7">border-color</span><span class="s1"> </span><span class="s8">0.3s</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">0</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">appearance:</span><span class="s1"> </span><span class="s7">none</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.form-input:focus</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">outline:</span><span class="s1"> </span><span class="s7">none</span><span class="s1">;</span></p>
-<p class="p9"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">border-color:</span><span class="s5"> </span><span class="s1">var(--morandi-gold)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.submit-btn</span><span class="s5"> {</span></p>
-<p class="p9"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">background-color:</span><span class="s5"> </span><span class="s1">var(--morandi-gold)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">white</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">1rem</span><span class="s1"> </span><span class="s8">3rem</span><span class="s1">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">letter-spacing:</span><span class="s5"> </span><span class="s8">2px</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s1"> </span><span class="s7">all</span><span class="s1"> </span><span class="s8">0.3s</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.submit-btn:hover</span><span class="s5"> {</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s5"> </span><span class="s7">#bc8a5f</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s8">0</span><span class="s1"> </span><span class="s8">5px</span><span class="s1"> </span><span class="s8">15px</span><span class="s1"> </span><span class="s7">rgba(</span><span class="s8">212</span><span class="s1">, </span><span class="s8">163</span><span class="s1">, </span><span class="s8">115</span><span class="s1">, </span><span class="s8">0.4</span><span class="s7">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">.shimmer</span><span class="s1"> {</span></p>
-<p class="p10"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s5"> </span><span class="s7">linear-gradient(</span><span class="s1">90deg</span><span class="s5">, </span><span class="s7">rgba(</span><span class="s1">255</span><span class="s5">,</span><span class="s1">255</span><span class="s5">,</span><span class="s1">255</span><span class="s5">,</span><span class="s1">0</span><span class="s7">)</span><span class="s5"> </span><span class="s1">0%</span><span class="s5">, </span><span class="s7">rgba(</span><span class="s1">255</span><span class="s5">,</span><span class="s1">255</span><span class="s5">,</span><span class="s1">255</span><span class="s5">,</span><span class="s1">0.8</span><span class="s7">)</span><span class="s5"> </span><span class="s1">50%</span><span class="s5">, </span><span class="s7">rgba(</span><span class="s1">255</span><span class="s5">,</span><span class="s1">255</span><span class="s5">,</span><span class="s1">255</span><span class="s5">,</span><span class="s1">0</span><span class="s7">)</span><span class="s5"> </span><span class="s1">100%</span><span class="s7">)</span><span class="s5">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">background-size:</span><span class="s5"> </span><span class="s8">200%</span><span class="s5"> </span><span class="s8">100%</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">animation:</span><span class="s1"> </span><span class="s7">shimmer</span><span class="s1"> </span><span class="s8">3s</span><span class="s1"> </span><span class="s7">infinite</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">position:</span><span class="s1"> </span><span class="s7">absolute</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">top:</span><span class="s1"> </span><span class="s8">0</span><span class="s1">; </span><span class="s2">left:</span><span class="s1"> </span><span class="s8">0</span><span class="s1">; </span><span class="s2">right:</span><span class="s1"> </span><span class="s8">0</span><span class="s1">; </span><span class="s2">bottom:</span><span class="s1"> </span><span class="s8">0</span><span class="s1">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">pointer-events:</span><span class="s5"> </span><span class="s7">none</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">12px</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s11">@keyframes</span><span class="s1"> </span><span class="s7">shimmer</span><span class="s1"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">0%</span><span class="s1"> { </span><span class="s2">background-position:</span><span class="s1"> </span><span class="s8">-200%</span><span class="s1"> </span><span class="s8">0</span><span class="s1">; }</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">100%</span><span class="s1"> { </span><span class="s2">background-position:</span><span class="s1"> </span><span class="s8">200%</span><span class="s1"> </span><span class="s8">0</span><span class="s1">; }</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s3">&lt;</span><span class="s1">body</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Navigation --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">nav</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"glass-nav fixed top-0 w-full px-8 py-4 flex justify-between items-center"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-xl font-semibold tracking-widest text-[#d4a373]"</span><span class="s3">&gt;</span><span class="s5">B &amp; Y</span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hidden md:flex space-x-8 text-sm tracking-widest text-gray-500"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"#about"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hover:text-[#d4a373] transition"</span><span class="s3">&gt;</span><span class="s5">關於我們</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"#details"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hover:text-[#d4a373] transition"</span><span class="s3">&gt;</span><span class="s5">婚禮詳情</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"#dresscode"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hover:text-[#d4a373] transition"</span><span class="s3">&gt;</span><span class="s5">著裝建議</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"#rsvp"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hover:text-[#d4a373] transition font-bold"</span><span class="s3">&gt;</span><span class="s5">出席回函</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"md:hidden text-xs text-[#d4a373]"</span><span class="s3">&gt;</span><span class="s5">5.20.2030</span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s4">nav</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Hero Section --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hero-bg flex items-center justify-center text-center text-white px-4"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h2</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng italic text-xl md:text-2xl mb-4 opacity-90 tracking-widest"</span><span class="s3">&gt;</span><span class="s5">You are my greatest adventure.</span><span class="s3">&lt;/</span><span class="s4">h2</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h1</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-5xl md:text-8xl mb-6 font-light"</span><span class="s3">&gt;</span><span class="s5">Hyun Bin </span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-3xl md:text-5xl"</span><span class="s3">&gt;</span><span class="s5">&amp;</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span><span class="s5"> Son Ye-jin</span><span class="s3">&lt;/</span><span class="s4">h1</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-lg md:text-xl tracking-[0.3em] font-light"</span><span class="s3">&gt;</span><span class="s5">你是我這輩子最大的冒險</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Countdown Section --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"about"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"py-24 px-4 bg-[#fdfaf7] text-center"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-4xl mx-auto"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-[#d4a373] text-sm tracking-[0.4em] mb-12 uppercase"</span><span class="s3">&gt;</span><span class="s5">The Countdown</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"countdown"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-wrap justify-center items-center gap-4"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"timer-card"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"shimmer"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"days"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-3xl block text-[#d4a373]"</span><span class="s3">&gt;</span><span class="s5">00</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] tracking-widest opacity-60"</span><span class="s3">&gt;</span><span class="s5">DAYS</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"timer-divider"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"timer-card"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"shimmer"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"hours"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-3xl block text-[#d4a373]"</span><span class="s3">&gt;</span><span class="s5">00</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] tracking-widest opacity-60"</span><span class="s3">&gt;</span><span class="s5">HOURS</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"timer-divider"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"timer-card"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"shimmer"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"minutes"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-3xl block text-[#d4a373]"</span><span class="s3">&gt;</span><span class="s5">00</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] tracking-widest opacity-60"</span><span class="s3">&gt;</span><span class="s5">MINS</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"timer-divider"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"timer-card"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"shimmer"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"seconds"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-3xl block text-[#d4a373]"</span><span class="s3">&gt;</span><span class="s5">00</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] tracking-widest opacity-60"</span><span class="s3">&gt;</span><span class="s5">SECS</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mt-20 max-w-2xl mx-auto italic leading-loose text-gray-500 px-6"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>「在無數個平行時空裡，我總能認出你的眼睛。</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>這份冒險，因為有你，才有了前行的勇氣。」</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Details Section --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"details"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"py-24 px-4 bg-white"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-3xl mx-auto"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-[#d4a373] text-sm tracking-[0.4em] mb-16 text-center uppercase"</span><span class="s3">&gt;</span><span class="s5">Wedding Details</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- Ceremony V-Card --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"v-card"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-start mb-6"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">h4</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-2xl font-bold mb-2"</span><span class="s3">&gt;</span><span class="s1">【 儀式資訊 】</span><span class="s3">&lt;/</span><span class="s4">h4</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"font-eng text-gray-400 italic"</span><span class="s3">&gt;</span><span class="s1">The Holy Ceremony</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-right"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-[#d4a373] font-bold"</span><span class="s3">&gt;</span><span class="s1">2030.05.20</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-sm"</span><span class="s3">&gt;</span><span class="s1">Monday</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"space-y-4 text-gray-600"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s3">&gt;&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">地點：</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">台北 101 雲端高空禮堂</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s3">&gt;&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">時間：</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">09:30 入場 | 10:00 典禮開始</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"accordion-btn text-sm text-[#8da399] flex items-center mt-4 focus:outline-none"</span><span class="s5"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"toggleAccordion(this)"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s3">&gt;</span><span class="s1">查看交通指引 TRANSPORTATION</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">svg</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-4 h-4 ml-2 transition-transform duration-300"</span><span class="s5"> </span><span class="s2">fill</span><span class="s3">=</span><span class="s1">"none"</span><span class="s5"> </span><span class="s2">stroke</span><span class="s3">=</span><span class="s1">"currentColor"</span><span class="s5"> </span><span class="s2">viewBox</span><span class="s3">=</span><span class="s1">"0 0 24 24"</span><span class="s3">&gt;&lt;</span><span class="s4">path</span><span class="s5"> </span><span class="s2">stroke-linecap</span><span class="s3">=</span><span class="s1">"round"</span><span class="s5"> </span><span class="s2">stroke-linejoin</span><span class="s3">=</span><span class="s1">"round"</span><span class="s5"> </span><span class="s2">stroke-width</span><span class="s3">=</span><span class="s1">"2"</span><span class="s5"> </span><span class="s2">d</span><span class="s3">=</span><span class="s1">"M19 9l-7 7-7-7"</span><span class="s3">&gt;&lt;/</span><span class="s4">path</span><span class="s3">&gt;&lt;/</span><span class="s4">svg</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"accordion-content bg-gray-50 px-4 rounded-lg text-sm leading-relaxed"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"py-6"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>捷運：紅線「台北101站」4 號出口直達。</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>公車：520 路、1314 路於「市政府站」下車。</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- Banquet V-Card --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"v-card"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-start mb-6"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">h4</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-2xl font-bold mb-2"</span><span class="s3">&gt;</span><span class="s1">【 午宴資訊 】</span><span class="s3">&lt;/</span><span class="s4">h4</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"font-eng text-gray-400 italic"</span><span class="s3">&gt;</span><span class="s1">The Wedding Banquet</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-right text-[#d4a373] font-bold"</span><span class="s3">&gt;</span><span class="s5">12:30 PM</span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"space-y-4 text-gray-600"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s3">&gt;&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">地點：</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">北投晨曦森林莊園</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s3">&gt;&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">時間：</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">12:00 入席 | 12:30 準時開席</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"accordion-btn text-sm text-[#8da399] flex items-center mt-4 focus:outline-none"</span><span class="s5"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"toggleAccordion(this)"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s3">&gt;</span><span class="s1">查看交通指引 TRANSPORTATION</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">svg</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-4 h-4 ml-2 transition-transform duration-300"</span><span class="s5"> </span><span class="s2">fill</span><span class="s3">=</span><span class="s1">"none"</span><span class="s5"> </span><span class="s2">stroke</span><span class="s3">=</span><span class="s1">"currentColor"</span><span class="s5"> </span><span class="s2">viewBox</span><span class="s3">=</span><span class="s1">"0 0 24 24"</span><span class="s3">&gt;&lt;</span><span class="s4">path</span><span class="s5"> </span><span class="s2">stroke-linecap</span><span class="s3">=</span><span class="s1">"round"</span><span class="s5"> </span><span class="s2">stroke-linejoin</span><span class="s3">=</span><span class="s1">"round"</span><span class="s5"> </span><span class="s2">stroke-width</span><span class="s3">=</span><span class="s1">"2"</span><span class="s5"> </span><span class="s2">d</span><span class="s3">=</span><span class="s1">"M19 9l-7 7-7-7"</span><span class="s3">&gt;&lt;/</span><span class="s4">path</span><span class="s3">&gt;&lt;/</span><span class="s4">svg</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"accordion-content bg-gray-50 px-4 rounded-lg text-sm leading-relaxed"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"py-6"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>接駁：台北車站北二門有定時接駁專車。</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>公車：藍 99 路至「晨曦森林站」。</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Dress Code Section --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"dresscode"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"py-24 px-4 bg-[#8da399]/5"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-4xl mx-auto text-center"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-[#d4a373] text-sm tracking-[0.4em] mb-4 uppercase"</span><span class="s3">&gt;</span><span class="s5">Dress Code</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h4</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-2xl font-bold mb-12"</span><span class="s3">&gt;</span><span class="s5">服裝色彩建議</span><span class="s3">&lt;/</span><span class="s4">h4</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"grid grid-cols-1 md:grid-cols-3 gap-12"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"color-circle"</span><span class="s5"> </span><span class="s2">style</span><span class="s3">=</span><span class="s1">"background-color: #8da399;"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-bold mb-1 text-gray-700"</span><span class="s3">&gt;</span><span class="s5">霧藍</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-sm text-gray-400 italic"</span><span class="s3">&gt;</span><span class="s5">Dusty Blue</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"color-circle"</span><span class="s5"> </span><span class="s2">style</span><span class="s3">=</span><span class="s1">"background-color: #e3dac9;"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-bold mb-1 text-gray-700"</span><span class="s3">&gt;</span><span class="s5">燕麥奶茶</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-sm text-gray-400 italic"</span><span class="s3">&gt;</span><span class="s5">Oatmeal</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"color-circle"</span><span class="s5"> </span><span class="s2">style</span><span class="s3">=</span><span class="s1">"background-color: #a64d3e;"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-bold mb-1 text-gray-700"</span><span class="s3">&gt;</span><span class="s5">焦糖磚紅</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-sm text-gray-400 italic"</span><span class="s3">&gt;</span><span class="s5">Caramel</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- RSVP Section --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"rsvp"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"py-24 px-4 bg-[#fdfaf7]"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-2xl mx-auto bg-white p-10 md:p-16 shadow-xl rounded-2xl relative overflow-hidden"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"absolute top-0 right-0 w-32 h-32 bg-[#d4a373] opacity-5 -mr-16 -mt-16 rounded-full"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-3xl font-bold text-center mb-2 text-gray-800"</span><span class="s3">&gt;</span><span class="s5">出席回函</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng text-center text-[#d4a373] italic mb-12 tracking-widest uppercase"</span><span class="s3">&gt;</span><span class="s5">Awaiting Your Reply</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">iframe</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"hidden_iframe"</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"hidden_iframe"</span><span class="s5"> </span><span class="s2">style</span><span class="s3">=</span><span class="s1">"display:none;"</span><span class="s5"> </span><span class="s2">onload</span><span class="s3">=</span><span class="s1">"if(submitted) {showSuccess();}"</span><span class="s3">&gt;&lt;/</span><span class="s4">iframe</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- 根據您最新的預填網址精準對接的 form action --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">form</span><span class="s5"> </span><span class="s2">action</span><span class="s3">=</span><span class="s1">"https://docs.google.com/forms/d/e/1FAIpQLSfRgKqcuxr6wSqzaAbAKJGD6V3TKxjOSgJifYsE-BgVYzGVDQ/formResponse"</span><span class="s5"> </span><span class="s2">method</span><span class="s3">=</span><span class="s1">"POST"</span><span class="s5"> </span><span class="s2">target</span><span class="s3">=</span><span class="s1">"hidden_iframe"</span><span class="s5"> </span><span class="s2">onsubmit</span><span class="s3">=</span><span class="s1">"submitted=true;"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"space-y-10"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">&lt;!-- 姓名 --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">label</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs tracking-widest text-gray-400 block mb-1"</span><span class="s3">&gt;</span><span class="s5">姓名 NAME</span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">input</span><span class="s5"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"text"</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"entry.894185610"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"form-input"</span><span class="s5"> </span><span class="s2">placeholder</span><span class="s3">=</span><span class="s1">"請填寫您的姓名"</span><span class="s5"> </span><span class="s2">required</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">&lt;!-- 電子信箱 --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">label</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs tracking-widest text-gray-400 block mb-1"</span><span class="s3">&gt;</span><span class="s5">電子信箱 EMAIL</span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">input</span><span class="s5"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"email"</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"entry.256058033"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"form-input"</span><span class="s5"> </span><span class="s2">placeholder</span><span class="s3">=</span><span class="s1">"example@mail.com"</span><span class="s5"> </span><span class="s2">required</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s1">&lt;!-- 與新人的關係 (精確選項) --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">label</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs tracking-widest text-gray-400 block mb-1"</span><span class="s3">&gt;</span><span class="s5">與新人的關係 RELATIONSHIP</span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">select</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"entry.1888845739"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"form-input cursor-pointer"</span><span class="s5"> </span><span class="s2">required</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s6">""</span><span class="s1"> </span><span class="s2">disabled</span><span class="s1"> </span><span class="s2">selected</span><span class="s3">&gt;</span><span class="s1">請選擇您與新人的關係</span><span class="s3">&lt;/</span><span class="s4">option</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s6">"男方家人親戚"</span><span class="s3">&gt;</span><span class="s1">男方家人親戚</span><span class="s3">&lt;/</span><span class="s4">option</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s6">"男方同事長官"</span><span class="s3">&gt;</span><span class="s1">男方同事長官</span><span class="s3">&lt;/</span><span class="s4">option</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s6">"男方同學、好友"</span><span class="s3">&gt;</span><span class="s1">男方同學、好友</span><span class="s3">&lt;/</span><span class="s4">option</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s6">"女方家人親戚"</span><span class="s3">&gt;</span><span class="s1">女方家人親戚</span><span class="s3">&lt;/</span><span class="s4">option</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s6">"女方同事長官"</span><span class="s3">&gt;</span><span class="s1">女方同事長官</span><span class="s3">&lt;/</span><span class="s4">option</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s6">"女方同學、好友"</span><span class="s3">&gt;</span><span class="s1">女方同學、好友</span><span class="s3">&lt;/</span><span class="s4">option</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">select</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">&lt;!-- 參加人數 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"grid grid-cols-1 md:grid-cols-2 gap-8"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">label</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xs tracking-widest text-gray-400 block mb-1"</span><span class="s3">&gt;</span><span class="s1">參加儀式人數 CEREMONY GUESTS</span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">input</span><span class="s5"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"number"</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"entry.1517295072"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"form-input"</span><span class="s5"> </span><span class="s2">placeholder</span><span class="s3">=</span><span class="s1">"請輸入人數"</span><span class="s5"> </span><span class="s2">min</span><span class="s3">=</span><span class="s1">"0"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">label</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xs tracking-widest text-gray-400 block mb-1"</span><span class="s3">&gt;</span><span class="s1">參加喜宴人數 BANQUET GUESTS</span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">input</span><span class="s5"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"number"</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"entry.1732976192"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"form-input"</span><span class="s5"> </span><span class="s2">placeholder</span><span class="s3">=</span><span class="s1">"請輸入人數"</span><span class="s5"> </span><span class="s2">min</span><span class="s3">=</span><span class="s1">"0"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s1">&lt;!-- 飲食需求 (葷食與素食) --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">label</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs tracking-widest text-gray-400 block mb-1"</span><span class="s3">&gt;</span><span class="s5">飲食需求 DIETARY</span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">select</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"entry.1972509659"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"form-input cursor-pointer"</span><span class="s5"> </span><span class="s2">required</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s6">""</span><span class="s1"> </span><span class="s2">disabled</span><span class="s1"> </span><span class="s2">selected</span><span class="s3">&gt;</span><span class="s1">請選擇飲食習慣</span><span class="s3">&lt;/</span><span class="s4">option</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s6">"葷食"</span><span class="s3">&gt;</span><span class="s1">葷食</span><span class="s3">&lt;/</span><span class="s4">option</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s6">"素食"</span><span class="s3">&gt;</span><span class="s1">素食</span><span class="s3">&lt;/</span><span class="s4">option</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">select</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">&lt;!-- 兒童椅 --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">label</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs tracking-widest text-gray-400 block mb-3"</span><span class="s3">&gt;</span><span class="s5">是否需要兒童椅 HIGH CHAIR</span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex space-x-12"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">label</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex items-center space-x-2 cursor-pointer"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">input</span><span class="s5"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"radio"</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"entry.146759384"</span><span class="s5"> </span><span class="s2">value</span><span class="s3">=</span><span class="s1">"需要"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[#d4a373] focus:ring-[#d4a373]"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-sm"</span><span class="s3">&gt;</span><span class="s1">需要</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">label</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex items-center space-x-2 cursor-pointer"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">input</span><span class="s5"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"radio"</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"entry.146759384"</span><span class="s5"> </span><span class="s2">value</span><span class="s3">=</span><span class="s1">"不需要"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[#d4a373] focus:ring-[#d4a373]"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-sm"</span><span class="s3">&gt;</span><span class="s1">不需要</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s1">&lt;!-- 給新人的祝福 (對應 entry.907669309) --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">label</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs tracking-widest text-gray-400 block mb-1"</span><span class="s3">&gt;</span><span class="s5">給新人的祝福 BLESSING</span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">textarea</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"entry.907669309"</span><span class="s5"> </span><span class="s2">rows</span><span class="s3">=</span><span class="s1">"3"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"form-input"</span><span class="s5"> </span><span class="s2">placeholder</span><span class="s3">=</span><span class="s1">"留下您對我們的祝福與悄悄話..."</span><span class="s3">&gt;&lt;/</span><span class="s4">textarea</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-center pt-8"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s5"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"submit"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"submit-btn rounded-full text-sm font-semibold uppercase"</span><span class="s3">&gt;</span><span class="s5">確認送出 SUBMIT</span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">form</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- Success Message Box --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"success_msg"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hidden absolute inset-0 bg-white flex flex-col items-center justify-center text-center p-8 z-20"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-20 h-20 bg-[#d4a373] rounded-full flex items-center justify-center text-white mb-6 animate-bounce"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">svg</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-10 h-10"</span><span class="s5"> </span><span class="s2">fill</span><span class="s3">=</span><span class="s1">"none"</span><span class="s5"> </span><span class="s2">stroke</span><span class="s3">=</span><span class="s1">"currentColor"</span><span class="s5"> </span><span class="s2">viewBox</span><span class="s3">=</span><span class="s1">"0 0 24 24"</span><span class="s3">&gt;&lt;</span><span class="s4">path</span><span class="s5"> </span><span class="s2">stroke-linecap</span><span class="s3">=</span><span class="s1">"round"</span><span class="s5"> </span><span class="s2">stroke-linejoin</span><span class="s3">=</span><span class="s1">"round"</span><span class="s5"> </span><span class="s2">stroke-width</span><span class="s3">=</span><span class="s1">"3"</span><span class="s5"> </span><span class="s2">d</span><span class="s3">=</span><span class="s1">"M5 13l4 4L19 7"</span><span class="s3">&gt;&lt;/</span><span class="s4">path</span><span class="s3">&gt;&lt;/</span><span class="s4">svg</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">h4</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-2xl font-bold mb-4"</span><span class="s3">&gt;</span><span class="s5">回函已送出</span><span class="s3">&lt;/</span><span class="s4">h4</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-gray-500 leading-relaxed px-4"</span><span class="s3">&gt;</span><span class="s1">感謝您的回覆，我們非常期待在婚禮當天見到您！</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s5"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"document.getElementById('success_msg').classList.add('hidden')"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mt-10 text-xs tracking-widest text-[#d4a373] border-b border-[#d4a373]"</span><span class="s3">&gt;</span><span class="s5">返回網頁</span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Footer --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">footer</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"py-12 bg-[#8da399] text-white text-center"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-eng tracking-[0.5em] text-sm opacity-80 uppercase mb-4"</span><span class="s3">&gt;</span><span class="s5">Hyun Bin &amp; Son Ye-jin</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-[10px] tracking-widest opacity-60"</span><span class="s3">&gt;</span><span class="s1">© 2030 CREATED FOR ADVENTURE LOVERS</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">footer</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// --- Countdown Timer Logic ---</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s11">const</span><span class="s1"> targetDate = </span><span class="s11">new</span><span class="s1"> </span><span class="s13">Date</span><span class="s1">(</span><span class="s10">"May 20, 2030 10:00:00"</span><span class="s1">).getTime();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s11">const</span><span class="s1"> updateCountdown = () =&gt; {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s11">const</span><span class="s1"> now = </span><span class="s11">new</span><span class="s1"> </span><span class="s13">Date</span><span class="s1">().getTime();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s11">const</span><span class="s1"> distance = targetDate - now;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s11">const</span><span class="s1"> days = </span><span class="s13">Math</span><span class="s1">.floor(distance / (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">24</span><span class="s1">));</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s11">const</span><span class="s1"> hours = </span><span class="s13">Math</span><span class="s1">.floor((distance % (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">24</span><span class="s1">)) / (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">60</span><span class="s1">));</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s11">const</span><span class="s1"> minutes = </span><span class="s13">Math</span><span class="s1">.floor((distance % (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">60</span><span class="s1">)) / (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1">));</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s11">const</span><span class="s1"> seconds = </span><span class="s13">Math</span><span class="s1">.floor((distance % (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1">)) / </span><span class="s14">1000</span><span class="s1">);</span></p>
-<p class="p7"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(</span><span class="s10">"days"</span><span class="s1">).innerText = days.toString().padStart(</span><span class="s14">2</span><span class="s1">, </span><span class="s10">'0'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(</span><span class="s10">"hours"</span><span class="s1">).innerText = hours.toString().padStart(</span><span class="s14">2</span><span class="s1">, </span><span class="s10">'0'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(</span><span class="s10">"minutes"</span><span class="s1">).innerText = minutes.toString().padStart(</span><span class="s14">2</span><span class="s1">, </span><span class="s10">'0'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(</span><span class="s10">"seconds"</span><span class="s1">).innerText = seconds.toString().padStart(</span><span class="s14">2</span><span class="s1">, </span><span class="s10">'0'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>setInterval(updateCountdown, </span><span class="s14">1000</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>updateCountdown();</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// --- Accordion Logic ---</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s11">function</span><span class="s1"> toggleAccordion(btn) {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>btn.classList.toggle(</span><span class="s10">'active'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s11">const</span><span class="s1"> icon = btn.querySelector(</span><span class="s10">'svg'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>icon.style.transform = btn.classList.contains(</span><span class="s10">'active'</span><span class="s1">) ? </span><span class="s10">'rotate(180deg)'</span><span class="s1"> : </span><span class="s10">'rotate(0deg)'</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s9"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// --- Form Submission Logic ---</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s11">let</span><span class="s1"> submitted = </span><span class="s11">false</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s11">function</span><span class="s1"> showSuccess() {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(</span><span class="s10">'success_msg'</span><span class="s1">).classList.remove(</span><span class="s10">'hidden'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
+
+    <!-- Navigation -->
+    <nav class="glass-nav fixed top-0 w-full px-8 py-4 flex justify-between items-center">
+        <div class="font-eng text-xl font-semibold tracking-widest text-[#d4a373]">B & Y</div>
+        <div class="hidden md:flex space-x-8 text-sm tracking-widest text-gray-500">
+            <a href="#about" class="hover:text-[#d4a373] transition">關於我們</a>
+            <a href="#details" class="hover:text-[#d4a373] transition">婚禮詳情</a>
+            <a href="#dresscode" class="hover:text-[#d4a373] transition">著裝建議</a>
+            <a href="#rsvp" class="hover:text-[#d4a373] transition font-bold">出席回函</a>
+        </div>
+        <div class="md:hidden text-xs text-[#d4a373]">5.20.2030</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg flex items-center justify-center text-center text-white px-4">
+        <div>
+            <h2 class="font-eng italic text-xl md:text-2xl mb-4 opacity-90 tracking-widest">You are my greatest adventure.</h2>
+            <h1 class="font-eng text-5xl md:text-8xl mb-6 font-light">Hyun Bin <span class="text-3xl md:text-5xl">&</span> Son Ye-jin</h1>
+            <p class="text-lg md:text-xl tracking-[0.3em] font-light">你是我這輩子最大的冒險</p>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="about" class="py-24 px-4 bg-[#fdfaf7] text-center">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="font-eng text-[#d4a373] text-sm tracking-[0.4em] mb-12 uppercase">The Countdown</h3>
+            
+            <div id="countdown" class="flex flex-wrap justify-center items-center gap-4">
+                <div class="timer-card">
+                    <div class="shimmer"></div>
+                    <span id="days" class="font-eng text-3xl block text-[#d4a373]">00</span>
+                    <span class="text-[10px] tracking-widest opacity-60">DAYS</span>
+                </div>
+                <div class="timer-divider"></div>
+                <div class="timer-card">
+                    <div class="shimmer"></div>
+                    <span id="hours" class="font-eng text-3xl block text-[#d4a373]">00</span>
+                    <span class="text-[10px] tracking-widest opacity-60">HOURS</span>
+                </div>
+                <div class="timer-divider"></div>
+                <div class="timer-card">
+                    <div class="shimmer"></div>
+                    <span id="minutes" class="font-eng text-3xl block text-[#d4a373]">00</span>
+                    <span class="text-[10px] tracking-widest opacity-60">MINS</span>
+                </div>
+                <div class="timer-divider"></div>
+                <div class="timer-card">
+                    <div class="shimmer"></div>
+                    <span id="seconds" class="font-eng text-3xl block text-[#d4a373]">00</span>
+                    <span class="text-[10px] tracking-widest opacity-60">SECS</span>
+                </div>
+            </div>
+
+            <div class="mt-20 max-w-2xl mx-auto italic leading-loose text-gray-500 px-6">
+                「在無數個平行時空裡，我總能認出你的眼睛。<br>
+                這份冒險，因為有你，才有了前行的勇氣。」
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="details" class="py-24 px-4 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <h3 class="font-eng text-[#d4a373] text-sm tracking-[0.4em] mb-16 text-center uppercase">Wedding Details</h3>
+
+            <!-- Ceremony V-Card -->
+            <div class="v-card">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2">【 儀式資訊 】</h4>
+                        <p class="font-eng text-gray-400 italic">The Holy Ceremony</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-[#d4a373] font-bold">2030.05.20</p>
+                        <p class="text-sm">Monday</p>
+                    </div>
+                </div>
+                <div class="space-y-4 text-gray-600">
+                    <p><strong>地點：</strong>台北 101 雲端高空禮堂</p>
+                    <p><strong>時間：</strong>09:30 入場 | 10:00 典禮開始</p>
+                    
+                    <button class="accordion-btn text-sm text-[#8da399] flex items-center mt-4 focus:outline-none" onclick="toggleAccordion(this)">
+                        <span>查看交通指引 TRANSPORTATION</span>
+                        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content bg-gray-50 px-4 rounded-lg text-sm leading-relaxed">
+                        <div class="py-6">
+                            捷運：紅線「台北101站」4 號出口直達。<br>
+                            公車：520 路、1314 路於「市政府站」下車。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banquet V-Card -->
+            <div class="v-card">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2">【 午宴資訊 】</h4>
+                        <p class="font-eng text-gray-400 italic">The Wedding Banquet</p>
+                    </div>
+                    <div class="text-right text-[#d4a373] font-bold">12:30 PM</div>
+                </div>
+                <div class="space-y-4 text-gray-600">
+                    <p><strong>地點：</strong>北投晨曦森林莊園</p>
+                    <p><strong>時間：</strong>12:00 入席 | 12:30 準時開席</p>
+
+                    <button class="accordion-btn text-sm text-[#8da399] flex items-center mt-4 focus:outline-none" onclick="toggleAccordion(this)">
+                        <span>查看交通指引 TRANSPORTATION</span>
+                        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content bg-gray-50 px-4 rounded-lg text-sm leading-relaxed">
+                        <div class="py-6">
+                            接駁：台北車站北二門有定時接駁專車。<br>
+                            公車：藍 99 路至「晨曦森林站」。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress Code Section -->
+    <section id="dresscode" class="py-24 px-4 bg-[#8da399]/5">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="font-eng text-[#d4a373] text-sm tracking-[0.4em] mb-4 uppercase">Dress Code</h3>
+            <h4 class="text-2xl font-bold mb-12">服裝色彩建議</h4>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <div class="color-circle" style="background-color: #8da399;"></div>
+                    <p class="font-bold mb-1 text-gray-700">霧藍</p>
+                    <p class="font-eng text-sm text-gray-400 italic">Dusty Blue</p>
+                </div>
+                <div>
+                    <div class="color-circle" style="background-color: #e3dac9;"></div>
+                    <p class="font-bold mb-1 text-gray-700">燕麥奶茶</p>
+                    <p class="font-eng text-sm text-gray-400 italic">Oatmeal</p>
+                </div>
+                <div>
+                    <div class="color-circle" style="background-color: #a64d3e;"></div>
+                    <p class="font-bold mb-1 text-gray-700">焦糖磚紅</p>
+                    <p class="font-eng text-sm text-gray-400 italic">Caramel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="py-24 px-4 bg-[#fdfaf7]">
+        <div class="max-w-2xl mx-auto bg-white p-10 md:p-16 shadow-xl rounded-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-[#d4a373] opacity-5 -mr-16 -mt-16 rounded-full"></div>
+            
+            <h3 class="text-3xl font-bold text-center mb-2 text-gray-800">出席回函</h3>
+            <p class="font-eng text-center text-[#d4a373] italic mb-12 tracking-widest uppercase">Awaiting Your Reply</p>
+
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {showSuccess();}"></iframe>
+
+            <!-- 根據您最新的預填網址精準對接的 form action -->
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfRgKqcuxr6wSqzaAbAKJGD6V3TKxjOSgJifYsE-BgVYzGVDQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                <div class="space-y-10">
+                    <!-- 姓名 -->
+                    <div>
+                        <label class="text-xs tracking-widest text-gray-400 block mb-1">姓名 NAME</label>
+                        <input type="text" name="entry.894185610" class="form-input" placeholder="請填寫您的姓名" required>
+                    </div>
+
+                    <!-- 電子信箱 -->
+                    <div>
+                        <label class="text-xs tracking-widest text-gray-400 block mb-1">電子信箱 EMAIL</label>
+                        <input type="email" name="entry.256058033" class="form-input" placeholder="example@mail.com" required>
+                    </div>
+
+                    <!-- 與新人的關係 (精確選項) -->
+                    <div>
+                        <label class="text-xs tracking-widest text-gray-400 block mb-1">與新人的關係 RELATIONSHIP</label>
+                        <select name="entry.1888845739" class="form-input cursor-pointer" required>
+                            <option value="" disabled selected>請選擇您與新人的關係</option>
+                            <option value="男方家人親戚">男方家人親戚</option>
+                            <option value="男方同事長官">男方同事長官</option>
+                            <option value="男方同學、好友">男方同學、好友</option>
+                            <option value="女方家人親戚">女方家人親戚</option>
+                            <option value="女方同事長官">女方同事長官</option>
+                            <option value="女方同學、好友">女方同學、好友</option>
+                        </select>
+                    </div>
+
+                    <!-- 參加人數 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="text-xs tracking-widest text-gray-400 block mb-1">參加儀式人數 CEREMONY GUESTS</label>
+                            <input type="number" name="entry.1517295072" class="form-input" placeholder="請輸入人數" min="0">
+                        </div>
+                        <div>
+                            <label class="text-xs tracking-widest text-gray-400 block mb-1">參加喜宴人數 BANQUET GUESTS</label>
+                            <input type="number" name="entry.1732976192" class="form-input" placeholder="請輸入人數" min="0">
+                        </div>
+                    </div>
+
+                    <!-- 飲食需求 (葷食與素食) -->
+                    <div>
+                        <label class="text-xs tracking-widest text-gray-400 block mb-1">飲食需求 DIETARY</label>
+                        <select name="entry.1972509659" class="form-input cursor-pointer" required>
+                            <option value="" disabled selected>請選擇飲食習慣</option>
+                            <option value="葷食">葷食</option>
+                            <option value="素食">素食</option>
+                        </select>
+                    </div>
+
+                    <!-- 兒童椅 -->
+                    <div>
+                        <label class="text-xs tracking-widest text-gray-400 block mb-3">是否需要兒童椅 HIGH CHAIR</label>
+                        <div class="flex space-x-12">
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="radio" name="entry.146759384" value="需要" class="text-[#d4a373] focus:ring-[#d4a373]">
+                                <span class="text-sm">需要</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="radio" name="entry.146759384" value="不需要" class="text-[#d4a373] focus:ring-[#d4a373]">
+                                <span class="text-sm">不需要</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 給新人的祝福 (對應 entry.907669309) -->
+                    <div>
+                        <label class="text-xs tracking-widest text-gray-400 block mb-1">給新人的祝福 BLESSING</label>
+                        <textarea name="entry.907669309" rows="3" class="form-input" placeholder="留下您對我們的祝福與悄悄話..."></textarea>
+                    </div>
+
+                    <div class="text-center pt-8">
+                        <button type="submit" class="submit-btn rounded-full text-sm font-semibold uppercase">確認送出 SUBMIT</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Success Message Box -->
+            <div id="success_msg" class="hidden absolute inset-0 bg-white flex flex-col items-center justify-center text-center p-8 z-20">
+                <div class="w-20 h-20 bg-[#d4a373] rounded-full flex items-center justify-center text-white mb-6 animate-bounce">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">回函已送出</h4>
+                <p class="text-gray-500 leading-relaxed px-4">感謝您的回覆，我們非常期待在婚禮當天見到您！</p>
+                <button onclick="document.getElementById('success_msg').classList.add('hidden')" class="mt-10 text-xs tracking-widest text-[#d4a373] border-b border-[#d4a373]">返回網頁</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[#8da399] text-white text-center">
+        <p class="font-eng tracking-[0.5em] text-sm opacity-80 uppercase mb-4">Hyun Bin & Son Ye-jin</p>
+        <p class="text-[10px] tracking-widest opacity-60">© 2030 CREATED FOR ADVENTURE LOVERS</p>
+    </footer>
+
+    <script>
+        // --- Countdown Timer Logic ---
+        const targetDate = new Date("May 20, 2030 10:00:00").getTime();
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById("days").innerText = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+        };
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // --- Accordion Logic ---
+        function toggleAccordion(btn) {
+            btn.classList.toggle('active');
+            const icon = btn.querySelector('svg');
+            icon.style.transform = btn.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+
+        // --- Form Submission Logic ---
+        let submitted = false;
+        function showSuccess() {
+            document.getElementById('success_msg').classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
