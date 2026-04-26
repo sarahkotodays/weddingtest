@@ -21,7 +21,8 @@
             background-color: var(--morandi-bg);
             color: #4a4a4a;
             scroll-behavior: smooth;
-            word-break: keep-all; /* 防止中文碎斷 */
+            word-break: keep-all; 
+            overflow-x: hidden;
         }
 
         .font-eng {
@@ -30,45 +31,44 @@
 
         /* Frosted Glass Navbar */
         .glass-nav {
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(212, 163, 115, 0.15);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(212, 163, 115, 0.1);
             z-index: 1000;
         }
 
         /* Hero Section */
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('https://i.postimg.cc/kgc56jph/134950801-802862817239601-5119699613019994186-n.jpg');
+            background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('https://i.postimg.cc/T16vCyyy/134950801-802862817239601-5119699613019994186-n.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;
         }
 
-        /* Countdown Cards (Responsive Adjustments) */
+        /* Countdown Cards (Mobile Optimized) */
         .timer-card {
             background: var(--soft-white);
             border-radius: 12px;
-            box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.05);
-            padding: 1rem 0.5rem;
-            min-width: 70px; /* 手機版縮窄 */
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+            padding: 0.75rem 0.25rem;
+            min-width: 65px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
             position: relative;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            transition: transform 0.3s ease;
         }
         
         @media (min-width: 768px) {
             .timer-card {
                 padding: 1.5rem 1rem;
-                min-width: 90px;
+                min-width: 95px;
             }
         }
 
         .timer-divider {
             width: 1px;
-            height: 30px;
-            background: rgba(212, 163, 115, 0.25);
-            margin: 0 8px;
+            height: 25px;
+            background: rgba(212, 163, 115, 0.2);
+            margin: 0 4px;
         }
         
         @media (min-width: 768px) {
@@ -83,35 +83,59 @@
             background: white;
             border-left: 4px solid var(--morandi-gold);
             padding: 1.5rem;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.03);
-            margin-bottom: 1.5rem;
-        }
-        
-        @media (min-width: 768px) {
-            .v-card {
-                padding: 2.5rem;
-                margin-bottom: 2rem;
-            }
+            box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+            margin-bottom: 2rem;
         }
 
-        /* Accordion */
-        .accordion-content {
+        /* Smart Fields & Accordion Animation */
+        .accordion-content, .smart-field {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
             opacity: 0;
         }
         
-        .accordion-btn.active + .accordion-content {
-            max-height: 500px;
+        .active-field {
+            max-height: 1000px;
             opacity: 1;
+            margin-top: 2.5rem;
+        }
+
+        .accordion-btn.active + .accordion-content {
+            max-height: 600px;
+            opacity: 1;
+            padding-top: 1.5rem;
+        }
+
+        /* Dress Code Color Cards - 已優化為純顏色顯示 */
+        .dress-color-box {
+            background: white;
+            padding: 1.25rem 0.75rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid rgba(212, 163, 115, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .dress-color-box:hover {
+            transform: translateY(-3px);
+        }
+        .color-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+            border: 2px solid white;
+            margin: 0 auto 0.75rem;
+        }
+        @media (min-width: 768px) {
+            .color-circle { width: 70px; height: 70px; }
         }
 
         /* Form Styling */
         .form-input {
             border: none;
-            border-bottom: 1px solid #d1d1d1;
-            padding: 0.85rem 0;
+            border-bottom: 1px solid #e2e2e2;
+            padding: 0.75rem 0;
             width: 100%;
             background: transparent;
             transition: border-color 0.3s;
@@ -130,13 +154,13 @@
             padding: 1rem 3.5rem;
             letter-spacing: 3px;
             transition: all 0.4s;
-            text-transform: uppercase;
+            box-shadow: 0 10px 20px -10px rgba(212, 163, 115, 0.5);
         }
 
         .shimmer {
-            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
             background-size: 200% 100%;
-            animation: shimmer 3.5s infinite;
+            animation: shimmer 4s infinite linear;
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
             pointer-events: none;
@@ -152,120 +176,118 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="glass-nav fixed top-0 w-full px-4 md:px-8 py-4 flex justify-between items-center">
+    <nav class="glass-nav fixed top-0 w-full px-4 md:px-12 py-4 flex justify-between items-center">
         <div class="font-eng text-xl font-semibold tracking-widest text-[#d4a373] whitespace-nowrap">B & Y</div>
-        <div class="hidden md:flex space-x-10 text-sm tracking-widest text-gray-500">
-            <a href="#about" class="hover:text-[#d4a373] transition">關於我們</a>
-            <a href="#details" class="hover:text-[#d4a373] transition">婚禮詳情</a>
-            <a href="#dresscode" class="hover:text-[#d4a373] transition">著裝建議</a>
-            <a href="#rsvp" class="hover:text-[#d4a373] transition font-bold">出席回函</a>
+        <div class="hidden md:flex space-x-12 text-[10px] tracking-widest text-gray-400 uppercase font-bold">
+            <a href="#about" class="hover:text-[#d4a373] transition">關於我們 ABOUT</a>
+            <a href="#details" class="hover:text-[#d4a373] transition">婚禮詳情 DETAILS</a>
+            <a href="#dresscode" class="hover:text-[#d4a373] transition">著裝建議 DRESS CODE</a>
+            <a href="#rsvp" class="hover:text-[#d4a373] transition text-gray-700">出席回函 RSVP</a>
         </div>
-        <div class="md:hidden text-[10px] tracking-widest text-[#d4a373] font-eng">5.20.2030</div>
+        <div class="md:hidden text-[10px] tracking-widest text-[#d4a373] font-eng uppercase">5.20.2030</div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-bg flex items-center justify-center text-center text-white px-6">
-        <div>
-            <h2 class="font-eng italic text-lg md:text-2xl mb-4 opacity-90 tracking-widest">You are my greatest adventure.</h2>
-            <!-- 手機版字體縮小避免斷行 -->
-            <h1 class="font-eng text-4xl md:text-8xl mb-6 font-light leading-tight">Hyun Bin <span class="text-2xl md:text-5xl">&</span> Son Ye-jin</h1>
-            <p class="text-base md:text-xl tracking-[0.3em] font-light">你是我這輩子最大的冒險</p>
+        <div class="w-full">
+            <h2 class="font-eng italic text-base md:text-2xl mb-4 opacity-90 tracking-widest text-balance uppercase text-white shadow-sm">You are my greatest adventure.</h2>
+            <h1 class="font-eng text-4xl md:text-8xl mb-6 font-light leading-snug text-balance">Hyun Bin <span class="text-2xl md:text-5xl">&</span> Son Ye-jin</h1>
+            <p class="text-sm md:text-xl tracking-[0.4em] font-light opacity-90">你是我這輩子最大的冒險</p>
         </div>
     </section>
 
     <!-- Countdown Section -->
-    <section id="about" class="py-20 md:py-24 px-4 bg-[#fdfaf7] text-center">
+    <section id="about" class="py-20 md:py-32 px-4 bg-[#fdfaf7] text-center">
         <div class="max-w-4xl mx-auto">
-            <h3 class="font-eng text-[#d4a373] text-sm tracking-[0.4em] mb-12 uppercase">The Countdown</h3>
+            <h3 class="font-eng text-[#d4a373] text-[10px] md:text-xs tracking-[0.5em] mb-12 uppercase opacity-70 font-semibold">The Countdown</h3>
             
-            <!-- 手機版防止換行的容器 -->
-            <div id="countdown" class="flex justify-center items-center">
+            <div id="countdown" class="flex justify-center items-center flex-nowrap">
                 <div class="timer-card">
                     <div class="shimmer"></div>
-                    <span id="days" class="font-eng text-2xl md:text-4xl block text-[#d4a373]">00</span>
-                    <span class="text-[8px] md:text-[10px] tracking-widest opacity-60">DAYS</span>
+                    <span id="days" class="font-eng text-2xl md:text-5xl block text-[#d4a373] font-light">00</span>
+                    <span class="text-[8px] md:text-[10px] tracking-widest opacity-50 uppercase">Days</span>
                 </div>
                 <div class="timer-divider"></div>
                 <div class="timer-card">
                     <div class="shimmer"></div>
-                    <span id="hours" class="font-eng text-2xl md:text-4xl block text-[#d4a373]">00</span>
-                    <span class="text-[8px] md:text-[10px] tracking-widest opacity-60">HOURS</span>
+                    <span id="hours" class="font-eng text-2xl md:text-5xl block text-[#d4a373] font-light">00</span>
+                    <span class="text-[8px] md:text-[10px] tracking-widest opacity-50 uppercase">Hrs</span>
                 </div>
                 <div class="timer-divider"></div>
                 <div class="timer-card">
                     <div class="shimmer"></div>
-                    <span id="minutes" class="font-eng text-2xl md:text-4xl block text-[#d4a373]">00</span>
-                    <span class="text-[8px] md:text-[10px] tracking-widest opacity-60">MINS</span>
+                    <span id="minutes" class="font-eng text-2xl md:text-5xl block text-[#d4a373] font-light">00</span>
+                    <span class="text-[8px] md:text-[10px] tracking-widest opacity-50 uppercase">Min</span>
                 </div>
                 <div class="timer-divider"></div>
                 <div class="timer-card">
                     <div class="shimmer"></div>
-                    <span id="seconds" class="font-eng text-2xl md:text-4xl block text-[#d4a373]">00</span>
-                    <span class="text-[8px] md:text-[10px] tracking-widest opacity-60">SECS</span>
+                    <span id="seconds" class="font-eng text-2xl md:text-5xl block text-[#d4a373] font-light">00</span>
+                    <span class="text-[8px] md:text-[10px] tracking-widest opacity-50 uppercase">Sec</span>
                 </div>
             </div>
 
-            <div class="mt-16 md:mt-20 max-w-2xl mx-auto italic leading-relaxed text-gray-500 px-6 text-sm md:text-base">
-                「在無數個平行時空裡，我總能認出你的眼睛。<br class="hidden md:block">
+            <div class="mt-16 md:mt-24 max-w-xl mx-auto italic leading-loose text-gray-400 px-6 text-sm md:text-base">
+                「在無數個平行時空裡，我總能認出你的眼睛。<br>
                 這份冒險，因為有你，才有了前行的勇氣。」
             </div>
         </div>
     </section>
 
     <!-- Details Section -->
-    <section id="details" class="py-20 md:py-24 px-6 bg-white">
+    <section id="details" class="py-20 md:py-32 px-6 bg-white">
         <div class="max-w-3xl mx-auto">
-            <h3 class="font-eng text-[#d4a373] text-sm tracking-[0.4em] mb-16 text-center uppercase">Wedding Details</h3>
+            <h3 class="font-eng text-[#d4a373] text-[10px] md:text-xs tracking-[0.5em] mb-16 text-center uppercase opacity-70 font-semibold">Wedding Details</h3>
 
-            <!-- Ceremony V-Card -->
             <div class="v-card">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-2">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
                     <div>
-                        <h4 class="text-xl md:text-2xl font-bold">【 儀式資訊 】</h4>
-                        <p class="font-eng text-gray-400 italic text-xs md:text-sm tracking-widest uppercase">The Holy Ceremony</p>
+                        <h4 class="text-xl md:text-2xl font-bold tracking-widest">【 儀式資訊 】</h4>
+                        <p class="font-eng text-gray-400 italic text-xs tracking-widest uppercase mt-1">The Holy Ceremony</p>
                     </div>
-                    <div class="md:text-right border-t md:border-t-0 pt-2 md:pt-0 w-full md:w-auto">
-                        <p class="text-[#d4a373] font-bold text-sm md:text-base">2030.05.20 (MON)</p>
+                    <div class="text-[#d4a373] font-bold text-sm md:text-lg border-l md:border-l-0 pl-4 md:pl-0 border-[#d4a373]">
+                        2030.05.20 (MON)
                     </div>
                 </div>
-                <div class="space-y-4 text-gray-600 text-sm md:text-base">
-                    <p><strong>地點：</strong>台北 101 雲端高空禮堂</p>
-                    <p><strong>時間：</strong>09:30 入場 | 10:00 典禮開始</p>
+                <div class="space-y-4 text-gray-500 text-sm md:text-base leading-relaxed">
+                    <p><span class="font-bold text-gray-700">地點：</span>台北 101 雲端高空禮堂</p>
+                    <p><span class="font-bold text-gray-700">時間：</span>09:30 入場 | 10:00 典禮開始</p>
                     
-                    <button class="accordion-btn text-[10px] md:text-xs tracking-widest text-[#8da399] flex items-center mt-6 focus:outline-none border-b border-[#8da399]/30 pb-1" onclick="toggleAccordion(this)">
+                    <button class="accordion-btn text-[10px] md:text-xs tracking-[0.2em] text-[#8da399] flex items-center mt-6 focus:outline-none border-b border-[#8da399]/20 pb-1 hover:border-[#8da399] transition" onclick="toggleAccordion(this)">
                         <span>交通指引 TRANSPORTATION</span>
-                        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <svg class="w-3 h-3 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                    <div class="accordion-content bg-gray-50 px-5 rounded-lg text-xs md:text-sm leading-relaxed">
-                        <div class="py-5">
-                            <strong>捷運：</strong>紅線「台北101站」4 號出口直達。<br>
-                            <strong>公車：</strong>520 路、1314 路於「市政府站」下車。
+                    <div class="accordion-content bg-gray-50 px-6 rounded-xl text-xs md:text-sm leading-relaxed text-gray-500">
+                        <div class="py-6 space-y-2">
+                            <p><strong>捷運：</strong>紅線「台北101站」4 號出口直達。</p>
+                            <p><strong>公車：</strong>520 路、1314 路於「市政府站」下車。</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Banquet V-Card -->
             <div class="v-card">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-2">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
                     <div>
-                        <h4 class="text-xl md:text-2xl font-bold">【 午宴資訊 】</h4>
-                        <p class="font-eng text-gray-400 italic text-xs md:text-sm tracking-widest uppercase">The Wedding Banquet</p>
+                        <h4 class="text-xl md:text-2xl font-bold tracking-widest">【 午宴資訊 】</h4>
+                        <p class="font-eng text-gray-400 italic text-xs tracking-widest uppercase mt-1">The Wedding Banquet</p>
                     </div>
-                    <div class="md:text-right border-t md:border-t-0 pt-2 md:pt-0 w-full md:w-auto text-[#d4a373] font-bold text-sm md:text-base">12:30 PM</div>
+                    <div class="text-[#d4a373] font-bold text-sm md:text-lg border-l md:border-l-0 pl-4 md:pl-0 border-[#d4a373]">
+                        12:30 PM 準時開席
+                    </div>
                 </div>
-                <div class="space-y-4 text-gray-600 text-sm md:text-base">
-                    <p><strong>地點：</strong>北投晨曦森林莊園</p>
-                    <p><strong>時間：</strong>12:00 入席 | 12:30 準時開席</p>
+                <div class="space-y-4 text-gray-500 text-sm md:text-base leading-relaxed">
+                    <p><span class="font-bold text-gray-700">地點：</span>北投晨曦森林莊園</p>
+                    <p><span class="font-bold text-gray-700">時間：</span>12:00 入席 | 12:30 準時開席</p>
 
-                    <button class="accordion-btn text-[10px] md:text-xs tracking-widest text-[#8da399] flex items-center mt-6 focus:outline-none border-b border-[#8da399]/30 pb-1" onclick="toggleAccordion(this)">
+                    <button class="accordion-btn text-[10px] md:text-xs tracking-[0.2em] text-[#8da399] flex items-center mt-6 focus:outline-none border-b border-[#8da399]/20 pb-1 hover:border-[#8da399] transition" onclick="toggleAccordion(this)">
                         <span>交通指引 TRANSPORTATION</span>
-                        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <svg class="w-3 h-3 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                    <div class="accordion-content bg-gray-50 px-5 rounded-lg text-xs md:text-sm leading-relaxed">
-                        <div class="py-5">
-                            <strong>接駁：</strong>台北車站北二門有定時接駁專車。<br>
-                            <strong>公車：</strong>藍 99 路至「晨曦森林站」。
+                    <div class="accordion-content bg-gray-50 px-6 rounded-xl text-xs md:text-sm leading-relaxed text-gray-500">
+                        <div class="py-6 space-y-2">
+                            <p><strong>接駁：</strong>台北車站北二門有定時接駁專車。</p>
+                            <p><strong>公車：</strong>藍 99 路至「晨曦森林站」。</p>
                         </div>
                     </div>
                 </div>
@@ -273,59 +295,62 @@
         </div>
     </section>
 
-    <!-- Dress Code Section -->
-    <section id="dresscode" class="py-20 md:py-24 px-6 bg-[#8da399]/5">
-        <div class="max-w-4xl mx-auto text-center">
-            <h3 class="font-eng text-[#d4a373] text-sm tracking-[0.4em] mb-4 uppercase">Dress Code</h3>
-            <h4 class="text-xl md:text-2xl font-bold mb-12">服裝色彩建議</h4>
+    <!-- Dress Code Section - 已移除 Hex 色碼，僅顯示顏色 -->
+    <section id="dresscode" class="py-20 md:py-32 px-6 bg-[#8da399]/5 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="font-eng text-[#d4a373] text-[10px] md:text-xs tracking-[0.5em] mb-4 uppercase opacity-70 font-semibold">Dress Code</h3>
+            <h4 class="text-xl md:text-2xl font-bold mb-12 tracking-widest text-gray-700">服裝色彩建議</h4>
             
-            <div class="grid grid-cols-3 gap-4 md:gap-12">
-                <div>
+            <div class="grid grid-cols-3 gap-3 md:gap-12">
+                <div class="dress-color-box">
                     <div class="color-circle" style="background-color: #8da399;"></div>
-                    <p class="font-bold mb-1 text-gray-700 text-xs md:text-base">霧藍</p>
-                    <p class="font-eng text-[10px] md:text-sm text-gray-400 italic">Dusty Blue</p>
+                    <p class="font-bold text-gray-600 text-xs md:text-base">霧藍</p>
+                    <p class="font-eng text-[8px] md:text-xs text-gray-400 italic">Dusty Blue</p>
                 </div>
-                <div>
+                <div class="dress-color-box">
                     <div class="color-circle" style="background-color: #e3dac9;"></div>
-                    <p class="font-bold mb-1 text-gray-700 text-xs md:text-base">燕麥奶茶</p>
-                    <p class="font-eng text-[10px] md:text-sm text-gray-400 italic">Oatmeal</p>
+                    <p class="font-bold text-gray-600 text-xs md:text-base">燕麥奶茶</p>
+                    <p class="font-eng text-[8px] md:text-xs text-gray-400 italic">Oatmeal</p>
                 </div>
-                <div>
+                <div class="dress-color-box">
                     <div class="color-circle" style="background-color: #a64d3e;"></div>
-                    <p class="font-bold mb-1 text-gray-700 text-xs md:text-base">焦糖磚紅</p>
-                    <p class="font-eng text-[10px] md:text-sm text-gray-400 italic">Caramel</p>
+                    <p class="font-bold text-gray-600 text-xs md:text-base">焦糖磚紅</p>
+                    <p class="font-eng text-[8px] md:text-xs text-gray-400 italic">Caramel</p>
                 </div>
             </div>
-            <p class="mt-12 text-gray-400 text-xs md:text-sm italic">歡迎穿著以上色系與我們共同見證幸福時刻</p>
+            <p class="mt-16 text-gray-400 text-xs md:text-sm italic tracking-widest">邀請您穿著以上色系與我們共襄盛舉</p>
         </div>
     </section>
 
     <!-- RSVP Section -->
-    <section id="rsvp" class="py-20 md:py-24 px-4 bg-[#fdfaf7]">
-        <div class="max-w-2xl mx-auto bg-white p-8 md:p-16 shadow-xl rounded-3xl relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-[#d4a373] opacity-5 -mr-16 -mt-16 rounded-full"></div>
+    <section id="rsvp" class="py-20 md:py-32 px-4 bg-[#fdfaf7]">
+        <div class="max-w-xl mx-auto bg-white p-8 md:p-16 shadow-2xl rounded-[2.5rem] relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-[#d4a373] opacity-[0.03] -mr-16 -mt-16 rounded-full"></div>
             
-            <h3 class="text-2xl md:text-3xl font-bold text-center mb-2 text-gray-800">出席回函</h3>
-            <p class="font-eng text-center text-[#d4a373] italic mb-12 tracking-widest uppercase text-xs md:text-sm">Awaiting Your Reply</p>
+            <h3 class="text-2xl md:text-3xl font-bold text-center mb-2 tracking-widest text-gray-800">出席回函</h3>
+            <p class="font-eng text-center text-[#d4a373] italic mb-12 tracking-[0.3em] uppercase text-xs">Awaiting Your Reply</p>
 
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {showSuccess();}"></iframe>
 
             <form action="https://docs.google.com/forms/d/e/1FAIpQLSfRgKqcuxr6wSqzaAbAKJGD6V3TKxjOSgJifYsE-BgVYzGVDQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="space-y-10">
+                    <!-- 姓名 -->
                     <div>
-                        <label class="text-[10px] md:text-xs tracking-widest text-gray-400 block mb-1">姓名 NAME</label>
-                        <input type="text" name="entry.894185610" class="form-input text-sm md:text-base" placeholder="請填寫您的姓名" required>
+                        <label class="text-[10px] tracking-widest text-gray-400 block mb-1 uppercase font-bold">姓名 NAME</label>
+                        <input type="text" name="entry.894185610" class="form-input text-sm md:text-base" placeholder="請輸入姓名" required>
                     </div>
 
+                    <!-- 電子信箱 -->
                     <div>
-                        <label class="text-[10px] md:text-xs tracking-widest text-gray-400 block mb-1">電子信箱 EMAIL</label>
+                        <label class="text-[10px] tracking-widest text-gray-400 block mb-1 uppercase font-bold">電子信箱 EMAIL</label>
                         <input type="email" name="entry.256058033" class="form-input text-sm md:text-base" placeholder="example@mail.com" required>
                     </div>
 
+                    <!-- 關係 -->
                     <div>
-                        <label class="text-[10px] md:text-xs tracking-widest text-gray-400 block mb-1">與新人的關係 RELATIONSHIP</label>
+                        <label class="text-[10px] tracking-widest text-gray-400 block mb-1 uppercase font-bold">與新人的關係 RELATIONSHIP</label>
                         <select name="entry.1888845739" class="form-input text-sm md:text-base cursor-pointer" required>
-                            <option value="" disabled selected>請選擇您與新人的關係</option>
+                            <option value="" disabled selected>請選擇您的關係</option>
                             <option value="男方家人親戚">男方家人親戚</option>
                             <option value="男方同事長官">男方同事長官</option>
                             <option value="男方同學、好友">男方同學、好友</option>
@@ -335,78 +360,87 @@
                         </select>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- 人數 -->
+                    <div class="grid grid-cols-2 gap-6 md:gap-10">
                         <div>
-                            <label class="text-[10px] md:text-xs tracking-widest text-gray-400 block mb-1">參加儀式人數 CEREMONY GUESTS</label>
-                            <input type="number" name="entry.1517295072" class="form-input text-sm md:text-base" placeholder="請輸入人數" min="0">
+                            <label class="text-[10px] tracking-widest text-gray-400 block mb-1 uppercase font-bold">儀式人數 CEREMONY GUESTS</label>
+                            <input type="number" name="entry.1517295072" class="form-input text-sm" placeholder="人數" min="0" value="0">
                         </div>
                         <div>
-                            <label class="text-[10px] md:text-xs tracking-widest text-gray-400 block mb-1">參加喜宴人數 BANQUET GUESTS</label>
-                            <input type="number" name="entry.1732976192" class="form-input text-sm md:text-base" placeholder="請輸入人數" min="0">
+                            <label class="text-[10px] tracking-widest text-gray-400 block mb-1 uppercase font-bold">喜宴人數 BANQUET GUESTS</label>
+                            <input type="number" id="banquet_guests_input" name="entry.1732976192" class="form-input text-sm" placeholder="人數" min="0" value="0" oninput="toggleSmartFields()">
                         </div>
                     </div>
 
-                    <div>
-                        <label class="text-[10px] md:text-xs tracking-widest text-gray-400 block mb-1">飲食需求 DIETARY</label>
-                        <select name="entry.1972509659" class="form-input text-sm md:text-base cursor-pointer" required>
-                            <option value="" disabled selected>請選擇飲食習慣</option>
-                            <option value="葷食">葷食</option>
-                            <option value="素食">素食</option>
-                        </select>
-                    </div>
+                    <!-- 智能顯示區塊 -->
+                    <div id="banquet_smart_fields" class="smart-field space-y-10">
+                        <div>
+                            <label class="text-[10px] tracking-widest text-gray-400 block mb-1 uppercase font-bold">飲食需求 DIETARY</label>
+                            <select name="entry.1972509659" class="form-input text-sm cursor-pointer">
+                                <option value="" disabled selected>請選擇飲食習慣</option>
+                                <option value="葷食">葷食</option>
+                                <option value="素食">素食</option>
+                            </select>
+                        </div>
 
-                    <div>
-                        <label class="text-[10px] md:text-xs tracking-widest text-gray-400 block mb-3">是否需要兒童椅 HIGH CHAIR</label>
-                        <div class="flex space-x-12">
-                            <label class="flex items-center space-x-2 cursor-pointer group">
-                                <input type="radio" name="entry.146759384" value="需要" class="text-[#d4a373] focus:ring-[#d4a373]">
-                                <span class="text-sm group-hover:text-[#d4a373] transition">需要</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer group">
-                                <input type="radio" name="entry.146759384" value="不需要" class="text-[#d4a373] focus:ring-[#d4a373]">
-                                <span class="text-sm group-hover:text-[#d4a373] transition">不需要</span>
-                            </label>
+                        <div>
+                            <label class="text-[10px] tracking-widest text-gray-400 block mb-4 uppercase font-bold">是否需要兒童椅 HIGH CHAIR</label>
+                            <div class="flex space-x-12">
+                                <label class="flex items-center space-x-3 cursor-pointer group">
+                                    <input type="radio" name="entry.146759384" value="需要" class="text-[#d4a373] focus:ring-[#d4a373]">
+                                    <span class="text-sm group-hover:text-[#d4a373] transition">需要</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer group">
+                                    <input type="radio" name="entry.146759384" value="不需要" class="text-[#d4a373] focus:ring-[#d4a373]">
+                                    <span class="text-sm group-hover:text-[#d4a373] transition">不需要</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- 祝福 -->
                     <div>
-                        <label class="text-[10px] md:text-xs tracking-widest text-gray-400 block mb-1">給新人的祝福 BLESSING</label>
-                        <textarea name="entry.907669309" rows="3" class="form-input text-sm md:text-base" placeholder="留下您對我們的祝福與悄悄話..."></textarea>
+                        <label class="text-[10px] tracking-widest text-gray-400 block mb-1 uppercase font-bold">給新人的祝福 BLESSING</label>
+                        <textarea name="entry.907669309" rows="3" class="form-input text-sm md:text-base" placeholder="留下您的悄悄話..."></textarea>
                     </div>
 
-                    <div class="text-center pt-8">
-                        <button type="submit" class="submit-btn rounded-full text-xs md:text-sm font-semibold uppercase">確認送出 SUBMIT</button>
+                    <div class="text-center pt-6">
+                        <button type="submit" class="submit-btn rounded-full text-xs md:text-sm font-bold uppercase tracking-[0.3em]">確認送出 Submit</button>
                     </div>
                 </div>
             </form>
 
-            <!-- Success Message Box -->
-            <div id="success_msg" class="hidden absolute inset-0 bg-white flex flex-col items-center justify-center text-center p-8 z-20">
-                <div class="w-20 h-20 bg-[#d4a373] rounded-full flex items-center justify-center text-white mb-8 animate-bounce">
+            <!-- Success Box -->
+            <div id="success_msg" class="hidden absolute inset-0 bg-white flex flex-col items-center justify-center text-center p-10 z-20">
+                <div class="w-20 h-20 bg-[#d4a373] rounded-full flex items-center justify-center text-white mb-8 shadow-lg">
                     <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                 </div>
-                <h4 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">回函已送出</h4>
-                <p class="text-gray-500 leading-relaxed px-6 text-sm md:text-base">感謝您的回覆，您的祝福我們已收到。<br>我們非常期待在婚禮當天見到您！</p>
-                <button onclick="document.getElementById('success_msg').classList.add('hidden')" class="mt-12 text-[10px] tracking-widest text-[#d4a373] uppercase border-b border-[#d4a373] pb-1 font-bold">Back to Page</button>
+                <h4 class="text-2xl font-bold mb-4 text-gray-800 tracking-widest">回函已送出</h4>
+                <p class="text-gray-400 leading-loose px-4 text-sm">
+                    感謝您的回覆，我們已收到您的祝福。<br>期待與您分享這份喜悅！
+                </p>
+                <button onclick="window.location.reload()" class="mt-12 text-[10px] tracking-[0.4em] text-[#d4a373] uppercase border-b border-[#d4a373] pb-1 font-bold">Back to Invite</button>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 bg-[#8da399] text-white text-center">
-        <p class="font-eng tracking-[0.6em] text-xs md:text-sm opacity-90 uppercase mb-4">Hyun Bin & Son Ye-jin</p>
-        <p class="text-[8px] md:text-[10px] tracking-widest opacity-60">© 2030 CREATED FOR ADVENTURE LOVERS</p>
+    <footer class="py-16 bg-[#8da399] text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="font-eng tracking-[0.6em] text-xs md:text-sm opacity-90 uppercase mb-4">Hyun Bin & Son Ye-jin</p>
+            <p class="text-[9px] tracking-widest opacity-40 uppercase">© 2030 Adventure of Life. All rights reserved.</p>
+        </div>
     </footer>
 
     <script>
-        // --- Countdown Timer Logic ---
+        // --- Countdown Timer ---
         const targetDate = new Date("May 20, 2030 10:00:00").getTime();
         const updateCountdown = () => {
             const now = new Date().getTime();
             const distance = targetDate - now;
             
             if (distance < 0) {
-                document.getElementById("countdown").innerHTML = "<p class='font-eng text-2xl text-[#d4a373] tracking-widest uppercase'>The Day is Here!</p>";
+                document.getElementById("countdown").innerHTML = "<p class='font-eng text-2xl text-[#d4a373] tracking-[0.4em] uppercase font-bold'>The Adventure Begins!</p>";
                 return;
             }
 
@@ -423,18 +457,31 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // --- Accordion Logic ---
+        // --- UI Logic: Accordion ---
         function toggleAccordion(btn) {
             btn.classList.toggle('active');
             const icon = btn.querySelector('svg');
             icon.style.transform = btn.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
         }
 
+        // --- UI Logic: Smart Fields ---
+        function toggleSmartFields() {
+            const val = parseInt(document.getElementById('banquet_guests_input').value) || 0;
+            const target = document.getElementById('banquet_smart_fields');
+            if (val > 0) {
+                target.classList.add('active-field');
+            } else {
+                target.classList.remove('active-field');
+            }
+        }
+
         // --- Form Submission Logic ---
         let submitted = false;
         function showSuccess() {
-            document.getElementById('success_msg').classList.remove('hidden');
-            document.getElementById('rsvp').scrollIntoView({behavior: 'smooth'});
+            setTimeout(() => {
+                document.getElementById('success_msg').classList.remove('hidden');
+                document.getElementById('rsvp').scrollIntoView({behavior: 'smooth'});
+            }, 500);
         }
     </script>
 </body>
